@@ -1,0 +1,161 @@
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+
+
+@media only screen and (min-width: 992px) {
+    /****Ipad Landscape 1024 Container 970 ****/
+
+    .service-list{ margin-bottom:30px;}
+    .c-logo-part ul li{ margin:0 15px;}
+    .form{ margin:0 0 0 20px}
+    .main-nav{ display:block !important; }
+    descripcion{   
+        -webkit-column-count: 2; /* Chrome, Safari, Opera */
+        -moz-column-count: 2; /* Firefox */
+        column-count: 2;
+
+        -webkit-column-gap: 30px;
+        -moz-column-gap: 30px;
+        column-gap: 30px;
+    }
+
+}	
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    /****Ipad Portrait 768 Container 750 ****/
+    body{ font-size:13px;}
+    p{ line-height:20px ;}
+    .header{padding:100px 0 150px;}
+    .header h1{ font-size:46px;}
+    .main-nav ul li a{ padding:14px;}
+    .small-logo{ padding:0 20px;}
+    h2{ font-size:30px}
+    h6{ font-size:16px;}
+    h3{ font-size:15px;}
+
+    .service-list{ margin-bottom:20px; font-size:15px;}
+    .featured-work p.padding-b{ padding-bottom:15px;}
+    .main-section{ padding:40px 40px;}
+    .c-logo-part ul li{ margin:0 0; float:left; width:18%;}
+    .c-logo-part ul li a{ display:block;}
+    .c-logo-part ul li a img{ display:block;}
+    .form{ margin:0;}
+    .contact-info-box{ margin:0 ;}
+    .social-link{ margin:0;}
+    .contactpart{border-bottom: #204d74; border-width: 0 0 2px 0; border-style: none none solid none; padding-bottom: 60px;}
+    .paypal{margin:60px 10%;}
+    .descripcion{font-size: 14px; padding-bottom: 20px;}
+
+    .main-nav{ display:block; }
+    .main-nav li a{ padding:8px 1.5%; margin:17px 0;}
+
+
+
+}
+
+@media only screen and (max-width: 769px) {
+    /****Mobile Landscape 480 Container 100% ****/
+    body{ font-size:12px;}
+    h2{ font-size:26px;}
+    h3{ font-size:14px;}
+    h6{ font-size:16px; margin-bottom:40px;}
+    p{ line-height:18px;}
+    .service-list{ font-size:12px; margin-bottom:20px;}
+    .we-create li{ font-size:13px; padding:0 0 0 8px}
+    .header h1{ font-size:28px; margin: 10px 10%;text-align: left;}
+    .header{ padding:60px auto 0px;}
+    .main-section{ padding:60px 0 40px;}
+    .main-nav{ display:none; position:absolute; left:0; width:100%; top:74px; margin:0 auto; flote : none; background:#fff;}
+    .main-nav-outer{display: block;}
+    .main-nav li{ display:list-item; text-align: left; width: initial;}
+    .main-nav li.small-logo{ display:none;}
+    .main-nav li a{ display:block; padding:7px 32px; border-bottom:none;}
+    .main-nav li a:hover{color:#204d74}
+    .team-leader-box{ max-width:307px; width:40%; height: 320px; float:none; margin:0 20px; display: inline-block}
+    .team-leader-box:nth-of-type(6n+0){margin:0 20px;;}
+    .team-leader:hover .team-leader-shadow{box-shadow:0px 0px 0px 7px rgba(32,77,116,0.20);}
+    .team-leader:hover ul{ display:block; opacity:0;}
+    .res-nav_click{ display:none;}
+    .featured-work{ font-size:12px; margin-top:30px; padding-left: 20px;}
+    .featured-box{ font-size:12px;}
+    .featured-box p{ line-height:18px; }
+    .c-logo-part ul a{ margin:0 0 5px;}
+    .c-logo-part ul li{ margin:0 0; text-align: justify }
+    .c-logo-part ul li a img {max-width: 100px;}
+    .main-section.team{ padding:60px 0 50px;}
+    .business-talking h2{ font-size:36px;}
+    .contact-info-box{ margin:0 0 12px 20px; font-size:12px;}
+    .contact-info-box span{ line-height:18px;}
+    .social-link{ margin-left:30px; position: inherit;} 
+    .form{ margin:0 30px;}
+    .copyright{ font-size:12px;}
+    .business-talking a{ padding:10px 25px; font-size:14px;}
+    .main-section.contact{ padding:60px 0 0px}
+    .client-part-haead{ font-size:20px; line-height:30px;}
+    .link{ font-size:14px; padding:10px 25px;}
+    .logo{ width:70%; margin:0px 10%;}
+    .logomin{ width:100px;}
+    .main-section.contact{ background-size:contain;}
+    .Portfolio-nav li a{ padding:5px 16px;}
+    .Portfolio-nav li{ display:block;}
+    .hlogo{text-align: center;}
+    .newsletter{padding:15px 35px;}
+    .newslettermail{height: 50px; font-size: 18px; width: 100%; margin-bottom: 25px;}
+    .suscripcion{height: 50px; font-size: 18px; width: 40%; margin:0 30%;}
+    .contactpart{border-bottom: #204d74; border-width: 0 0 2px 0; border-style: none none solid none; padding-bottom: 80px;}
+    .paypal{margin:80px 10% 20px;}
+    .descripcion{font-size: 14px; padding-bottom: 20px; -webkit-column-count:1; -moz-column-count:1; column-count:1; -webkit-column-gap:20px;-moz-column-gap:20px;column-gap:20px;}
+    .cForm{display: none;}
+    .pac{ height: auto; max-width: 75%; padding-left: 0; margin: 40px 7.5% 0 15%;}
+    .eng{margin:0 12.5%; max-width: 75%; padding: 0;}
+    .newsletter h1{font-size: 28px;}
+    .newsletter p{margin: 5%;}
+    .thanks h1{font-size: 26px; margin:6%;}
+    .thanks p{ font-size: 15px;}
+    .cthanks{ margin-bottom: 20px;}
+    .cthanks .paypal { margin:30px 10% 30px;}
+    .cthanks .paypal { padding:20px 0; border-top: #204d74 solid 2px; border-left-width: 0px;}
+    .cthanks .paypal form {margin:-15px;}
+    .back-to-top{ display: none; background-color: #204d74; border-color: #245269;}
+    .go-to-suscribe{right:10px; font-size: 15px;}
+    .read-more{left:10px; right: auto; font-size: 15px;}
+    .lang{top:20px; right: 10px;}
+    .lang button{padding:5px 6px; height: 35px; color: white; border-bottom-left-radius: 100px; border-top-left-radius: 100px;}
+    .lang .dropdown-toggle{border-bottom-right-radius: 100px; border-top-right-radius: 100px;}
+    .btn-group > .btn-lg + .dropdown-toggle{padding:5px 10px 5px 8px;}
+    .modal{top:5%; left:3.3%; width: 150%;}
+}
+
+@media only screen and (max-width: 479px) {
+    /****Mobile Portrait 320 ****/
+    .contact-info-box{ margin-left:0px;}
+    .header{ padding:20% 0 90%; text-align: left;}
+    .header h1{font-size: 22px; margin:0;}
+
+    .social{margin: 0 25%;}
+    .form{ margin:0}
+    .c-logo-part div ul li{margin:0 0;}
+    .Portfolio-box{  max-width:300px !important; width:96.4% !important; margin:0 !important}
+    .Portfolio-box img { max-width:100%;}
+    .portfolioContainer{ width:280px !important; margin:0 auto !important } 
+
+    .main-nav-outer{display: none;}
+    .client-part-haead{margin:5px 0 5px;}
+    .list{margin:0 0 60px;}
+    .team-leader-box{margin: 0 0 0 5%; height: 270px;}
+    /*.team-leader-box:nth-of-type(6n+0){margin:0 0 0 5%;}*/
+    .newsletter .contactForm{text-align: center;}
+    .newslettermail{height: 50px; font-size: 18px; width: 100%; margin-bottom: 25px;}
+    .suscripcion{height: 50px; font-size: 18px; width: 40%; margin:0 30%;}
+    .contact-info-box {font-size: large;}
+    .flex{display:inline;}
+    .contactpart{margin: 0 0 0px 0; padding: 0;}
+    .contact-info-box{width: 80%; font-size: medium; margin-left: 60px;}
+    .logo{width: 95%; margin:20% 0 0;}
+    .c-logo-part ul li a img {width: 80%;}
+    .header{background: url(../img/bgcentro.jpg); background-size:cover; background-repeat:no-repeat; background-position:center center;}
+    .thanks a {margin:10px 0;}
+    .descripcion{-webkit-column-count:1; -moz-column-count:1; column-count:1;}
+    .back-to-top{display: none;}
+}

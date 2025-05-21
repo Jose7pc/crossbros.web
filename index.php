@@ -1,18 +1,24 @@
+<?php
+$nombre = $_POST["nombre"];
+$correo = $_POST["correo"];
+$asunto = $_POST["asunto"];
+$mensaje = $_POST["mensaje"];
+
+$formMsg = "";
+
+
+$email_exp = '/^[A-Za-z0-9._%-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}$/';
+$string_exp = "/^[A-Za-z .'-]+$/";
+?>
+
+
 <!doctype html>
 <html>
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, maximum-scale=1">
 
-
         <title>Popol</title>
-        <meta property="og:title" content="Popol" />
-        <meta property="og:url" content="http://popol.es" />
-        <meta property="og:image" content="http://popol.es/img/logo.jpg" />
-        <meta property="image" content="http://popol.es/img/logo.jpg"/>
-        <meta name="og:description" content="¿Alguna vez has querido hacer un videojuego? Popol pone en tu mano todo lo necesario para ello. Crea. Comparte. Juega."/>
-        <meta name="Description" content="¿Alguna vez has querido crear un videojuego? Popol pone en tu mano todo lo necesario para ello.">
-        <meta name="Keywords" content="Popol videojuego videojuegos desarrollo recursos motor gráfico">
         <link rel="icon" href="favicon.png" type="image/png">
         <link rel="shortcut icon" href="favicon.ico" type="img/x-icon">
 
@@ -27,69 +33,69 @@
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i&amp;subset=cyrillic" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Montserrat:500,700" rel="stylesheet">
 
+        <!--[if IE]><style type="text/css">.pie {behavior:url(PIE.htc);}</style><![endif]-->
+
         <script type="text/javascript" src="js/jquery.1.8.3.min.js"></script>
         <script type="text/javascript" src="js/bootstrap.js"></script>
         <script type="text/javascript" src="js/jquery-scrolltofixed.js"></script>
         <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
-        <script type="text/javascript" src="js/jquery.isotope.js"></script>    
+        <script type="text/javascript" src="js/jquery.isotope.js"></script>
         <script type="text/javascript" src="js/wow.js"></script>
         <script type="text/javascript" src="js/classie.js"></script>
-        <script type="text/javascript" src="js/notiSE.js"></script>
+        <script src="contactform/contactform.js"></script>
+
 
     </head>
     <body>
 
-        <nav class="main-nav-outer" id="test">
+        <nav class="main-nav-outer" id="test"><!--main-nav-start-->
             <div class="container">
                 <ul class="main-nav">
                     <li><a class="nocolor" href="#quees">¿Qué es Popol?</a></li>
                     <li><a class="nocolor" href="#caracteristicas">¿Qué ofrece?</a></li>
-                    <li class="small-logo"><a  class="nocolor" href="#header"><img src="img/small-logo.png" alt="POPOL"></a></li>
+                    <li class="small-logo"><a  class="nocolor" href="#header"><img src="img/small-logo.png" alt=""></a></li>
                     <li><a class="nocolor" href="#equipo">Sobre Nosotros</a></li>
                     <li><a class="nocolor" href="#contacto">Contacto</a></li>
                 </ul>
                 <a class="res-nav_click" href="#"><i class="fa-bars"></i></a>
             </div>
-        </nav>
+        </nav><!--main-nav-end-->
 
 
-        <header class="header" id="header">
+        <header class="header" id="header"><!--header-start-->
             <div class="container">
                 <div class="row">
                     <div class="col-md-12 col-sm-12 hlogo">
                         <figure class="logo animated fadeInDown delay-07s">
-                            <a href="#"><img src="img/logo.png" alt="Popol"></a>	
+                            <a href="#"><img src="img/logo.png" alt=""></a>	
                         </figure>
                         <h1 class="animated fadeIn delay-12s"> Crea. Comparte. Juega.</h1>
                     </div>
                 </div>
             </div>
-        </header>
+        </header><!--header-end-->
 
 
 
-        <section class="main-section">
+        <section class="main-section"><!--main-section-start-->
             <div class="container">
-                <h2 style="color: white; font-size: 1px; margin:0;">Popol</h2>
                 <h2 id="quees">¿Qué es Popol?</h2>
                 <h6>La revolución en el mundo de los videojuegos</h6>
                 <br>
-                <div class="descripcion">
-                    <p>    ¿Alguna vez has tenido una idea para un videojuego pero 
-                        no sabías cómo llevarla a cabo? Seguramente en ese momento
-                        te hayas dado cuenta de todo lo que necesitas: una gran cantidad de recursos, 
-                        conocimientos en programación y mucho, mucho tiempo. Tanto las grandes
-                        empresas del sector como las independientes, sufren estas enormes dificultades.
-                        Popol quiere solucionar este problema.
-                    </p><br>
-                    <p>    Popol cuenta con una gran biblioteca de recursos, hechos por
-                        personas que, al igual que tú, quieren compartir su contenido. Todo 
-                        esto está al alcance de cualquiera que se una a la comunidad y así,
-                        unidos/as, crear la mayor biblioteca de recursos que exista. 
-                        Por último, piensa que todos los contenidos que se utilicen y produzcan dinero,
-                        ¡obtendrán su parte también!
-                    </p>
-                </div>
+                <p class="descripcion"> ¿Alguna vez has tenido una idea para un videojuego pero 
+                    no tenías ni idea de cómo llevarla a cabo? Seguramente en ese momento
+                    te hayas dado cuenta de todo lo que necesitas: una gran cantidad de recursos, 
+                    conocimientos en programación y mucho, mucho tiempo. Tanto las grandes
+                    empresas del sector como las independientes, sufren estas enormes dificultades.
+                    Popol quiere solucionar este problema.
+                    <br><br>
+                    Popol cuenta con una gran biblioteca de recursos, hechos por
+                    personas que, al igual que tú, quieren compartir su contenido. Todo 
+                    esto está al alcance de cualquiera que se una a la comunidad y así,
+                    unidos/as, crear la mayor biblioteca de recursos que exista. 
+                    Por último, piensa que todos los contenidos que se utilicen y produzcan dinero,
+                    ¡obtendrán su parte también!
+                </p>
                 <div class="row">
                     <div class="col-lg-6 col-sm-6 wow fadeInLeft delay-05s list">
                         <div class="service-list">
@@ -98,7 +104,7 @@
                             </div>
                             <div class="service-list-col2">
                                 <h3>CREA</h3>
-                                <p>Saca tu vena artística y crea aquello que siempre has soñado. Todo el contenido es bienvenido en POPOL.</p>
+                                <p>Saca tu vena artística y crea aquello que siempre has soñado. Todo el contenido es bienvenido en POPOL</p>
                             </div>
                         </div>
                         <div class="service-list">
@@ -107,7 +113,7 @@
                             </div>
                             <div class="service-list-col2">
                                 <h3>COMPARTE</h3>
-                                <p>Comparte todo tu contenido e ideas y ayuda a formar proyectos a otros usuarios.</p>
+                                <p>Comparte todo tu contenido e ideas y colabora a formar proyectos de otros usuarios.</p>
                             </div>
                         </div>
                         <div class="service-list">
@@ -116,7 +122,7 @@
                             </div>
                             <div class="service-list-col2">
                                 <h3>JUEGA</h3>
-                                <p>Crea tu propio videojuego apoyándote en la comunidad o disfruta de un catálogo de videojuegos hechos por otros usuarios.</p>
+                                <p>Crea tu propio videojuego apoyándote en la comunidad o disfruta de un catálogo de juegos hechos por otros usuarios.</p>
                             </div>
                         </div>
                         <div class="service-list">
@@ -125,30 +131,30 @@
                             </div>
                             <div class="service-list-col2">
                                 <h3>GANA DINERO</h3>
-                                <p>Saca al mercado tus videojuegos o gana dinero con los recursos que has subido si ayudaron a otros.</p>
+                                <p>Saca al mercado tus videojuegos o gana dinero con los recursos que has subido si estos ayudaron a otros.</p>
                             </div>
                         </div>
                     </div>
-                    <figure class="col-lg-6 col-sm-6  text-right wow fadeInRight pac">
-                        <img style="width: 400px;" src="img/comecocos.png" alt="La revolución en el mundo de los videojuegos">
+                    <figure class="col-lg-6 col-sm-6  text-right wow fadeInRight">
+                        <img class="pac" src="img/comecocos.png" alt="">
                     </figure>
 
                 </div>
             </div>
-        </section>
+        </section><!--main-section-end-->
 
 
 
-        <section class="main-section alabaster">
+        <section class="main-section alabaster"><!--main-section alabaster-start-->
             <div class="container">
                 <div class="row">
                     <figure class="col-lg-5 col-sm-4 wow fadeInLeft eng" id="caracteristicas">
-                        <img  src="img/ruedas2.png" alt="Popol ofrece las herramientas necesarias para hacer tus videojuegos">
+                        <img  src="img/ruedas2.png" alt="">
                     </figure>
                     <div class="col-lg-7 col-sm-8 featured-work">
                         <h2>¿Qué ofrece?</h2>
                         <P class="padding-b">Ahora que sabes todo lo que vas a poder hacer, quiero
-                            enseñarte cómo. Popol se sostendrá bajo tres pilares.</P>
+                            enseñarte el cómo. Popol se sostendrá bajo tres pilares:</P>
                         <div class="featured-box">
                             <div class="featured-box-col1 wow fadeInRight delay-01s">
                                 <i class="fa-users"></i>
@@ -164,7 +170,7 @@
                             </div>	
                             <div class="featured-box-col2 wow fadeInRight delay-02s">
                                 <h3>biblioteca de recursos gratuita</h3>
-                                <p>Descarga todos los recursos de la comunidad y úsalos en Popol gratis. </p>
+                                <p>Todos los recursos de la comunidad podrán ser descargados para usar en Popol de forma gratuita. </p>
                             </div>    
                         </div>
                         <div class="featured-box">
@@ -173,15 +179,28 @@
                             </div>	
                             <div class="featured-box-col2 wow fadeInRight delay-02s">
                                 <h3>Motor gráfico</h3>
-                                <p>Importa los recursos de la web en un motor gráfico fácil de usar y potente. Listo para crear tus videojuegos. </p>
+                                <p>Importa los recursos de la web en un motor gráfico facil de usar y potente. Listo para crear tus videojuegos. </p>
                             </div>    
                         </div>
+                        <a class="Learn-More" href="#">Learn More</a>
                     </div>
                 </div>
             </div>
+        </section><!--main-section alabaster-end-->
+
+        <section class="main-section newsletter">
+            <h1>¿Te gusta lo que ves?</h1>
+            <p> Suscríbete y te informaremos de cualquier novedad:</p>
+            <form action="registro.php" method="post" role="form" class="contactForm animated fadeIn delay-07s">
+                <input type="email" class="form-control newslettermail" name="email" id="email" placeholder="Correo" data-rule="email" data-msg="Introduce un email válido" />
+                <input type="submit" class="suscripcion" name="submit" value="SUSCRIBIRME">
+                <div class="validation"></div>
+            </form>
         </section>
 
-        <section class="main-section team">
+
+
+        <section class="main-section team"><!--main-section team-start-->
             <div class="container">
                 <h2 id="equipo">Conócenos</h2>
                 <h6>El equipo de Popol</h6>
@@ -189,43 +208,43 @@
                     <!-- Jose -->
                     <div class="team-leader-box">
                         <div class="team-leader wow fadeInDown delay-03s"> 
-                            <div class="team-leader-shadow"><a href="https://www.facebook.com/jose.perezcruz.37669"></a></div>
-                            <img src="img/Jose.png" alt="Jose">
+                            <div class="team-leader-shadow"><a href="#"></a></div>
+                            <img src="img/Jose.png" alt="">
                             <ul>
                                 <li><a href="https://www.facebook.com/jose.perezcruz.37669" class="fa-facebook"></a></li>
                             </ul>
                         </div>
                         <h3 class="wow fadeInDown delay-03s">Jose J. Pérez Cruz</h3>
-                        <span class="wow fadeInDown delay-03s">CEO</span>
+                        <span class="wow fadeInDown delay-03s">Co-CEO y CIO</span>
                     </div>
                     <!-- Angel -->
                     <div class="team-leader-box">
                         <div class="team-leader  wow fadeInDown delay-03s"> 
-                            <div class="team-leader-shadow"><a href="#equipo"></a></div>
-                            <img src="img/Angel.png" alt="Angel">
+                            <div class="team-leader-shadow"><a href="#"></a></div>
+                            <img src="img/Angel.png" alt="">
                             <ul>
                             </ul>
                         </div>
                         <h3 class="wow fadeInDown delay-03s">Angel Lanzas Sierra</h3>
-                        <span class="wow fadeInDown delay-03s">COO</span>
+                        <span class="wow fadeInDown delay-03s">Co-CEO y COO</span>
                     </div>
                     <!-- Fran -->
                     <div class="team-leader-box">
                         <div class="team-leader wow fadeInDown delay-06s"> 
-                            <div class="team-leader-shadow"><a href="https://www.facebook.com/fran.medina.9849?fref=ts"></a></div>
-                            <img src="img/Fran.png" alt="Fran">
+                            <div class="team-leader-shadow"><a href="#"></a></div>
+                            <img src="img/Fran.png" alt="">
                             <ul>
                                 <li><a href="https://www.facebook.com/fran.medina.9849?fref=ts" class="fa-facebook"></a></li>
                             </ul>
                         </div>
                         <h3 class="wow fadeInDown delay-03s">Francisco M. Medina Ruiz</h3>
-                        <span class="wow fadeInDown delay-03s">CCO</span>
+                        <span class="wow fadeInDown delay-03s">CFO</span>
                     </div>
                     <!-- Cobos -->
                     <div class="team-leader-box">
                         <div class="team-leader wow fadeInDown delay-06s"> 
-                            <div class="team-leader-shadow"><a href="#equipo"></a></div>
-                            <img src="img/Cobos.png" alt="Jesús">
+                            <div class="team-leader-shadow"><a href="#"></a></div>
+                            <img src="img/Cobos.png" alt="">
                             <ul>
                             </ul>
                         </div>
@@ -235,8 +254,8 @@
                     <!-- Jose Antonio -->
                     <div class="team-leader-box">
                         <div class="team-leader wow fadeInDown delay-03s"> 
-                            <div class="team-leader-shadow"><a href="#equipo"></a></div>
-                            <img src="img/JoseAntonio.png" alt="Jose Antonio">
+                            <div class="team-leader-shadow"><a href="#"></a></div>
+                            <img src="img/JoseAntonio.png" alt="">
                             <ul>
                             </ul>
                         </div>
@@ -246,8 +265,8 @@
                     <!-- Marta -->
                     <div class="team-leader-box">
                         <div class="team-leader wow fadeInDown delay-03s"> 
-                            <div class="team-leader-shadow"><a href="https://www.facebook.com/marta.pez.7?fref=ts"></a></div>
-                            <img src="img/Marta.png" alt="Marta">
+                            <div class="team-leader-shadow"><a href="#"></a></div>
+                            <img src="img/Marta.png" alt="">
                             <ul>
                                 <li><a href="https://www.facebook.com/marta.pez.7?fref=ts" class="fa-facebook"></a></li>
                             </ul>
@@ -257,14 +276,14 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section><!--main-section team-end-->
 
 
         <section class="business-talking">
             <div class="container">
                 <h2 id="contacto">Contacta con nosotros</h2>
             </div>
-        </section>
+        </section><!--business-talking-end-->
         <div class="container">
             <section class="main-section contact" id="contact">
 
@@ -281,7 +300,7 @@
                                     <p>contacto@popol.es</p>
                                 </div>
                             </div>
-                            <div class="social">
+                            <div>
                                 <ul class="social-link">
                                     <li class="twitter"><a href="https://twitter.com/popol_es"><i class="fa-twitter"></i></a></li>
                                     <li class="facebook"><a href="https://fb.me/WebPopol"><i class="fa-facebook"></i></a></li>
@@ -290,12 +309,13 @@
                         <div class="wow fadeInUp delay-05s">
                             <div class="form">
 
-                                <form action="sendEmail.php" method="post" role="form" class="contactForm cForm">
+
+                                <form action="" method="post" role="form" class="contactForm cForm">
                                     <h3> ¿Algo que decirnos? </h3>
                                     <div class="form-group">
                                         <input type="text" name="nombre" class="form-control input-text-bi" id="name" placeholder="Nombre" data-rule="minlen:4" data-msg="Introduce al menos 4 caracteres" />
                                         <div class="validation"></div>
-                                        <input type="email" class="form-control input-text-bi" name="email" id="email" placeholder="Correo" data-rule="email" data-msg="Introduce un email válido" />
+                                        <input type="email" class="form-control input-text-bi" name="correo" id="email" placeholder="Correo" data-rule="email" data-msg="Introduce un email válido" />
                                         <div class="validation"></div>
                                     </div>
                                     <div class="form-group">
@@ -303,18 +323,47 @@
                                         <div class="validation"></div>
                                     </div>
                                     <div class="form-group">
-                                        <textarea class="form-control input-text text-area" name="mensaje" rows="5" data-rule="required" data-msg="Escríbenos lo que quieras" placeholder="Escribe tu mensaje."></textarea>
+                                        <textarea class="form-control input-text text-area" name="mensaje" rows="5" data-rule="required" data-msg="Escríbenos lo que quieras" placeholder="Message"></textarea>
                                         <div class="validation"></div>
                                     </div>
-
-                                    <div class="text-center" style="margin-top: 30px;"><button type="submit" class="input-btn">Enviar</button></div>
+                                    <span class="alerta" id="formMsg"></span>
+                                    <div class="text-center"><button type="submit" class="input-btn">Enviar</button></div>
                                 </form>
+
+                                <?php
+                                if ($nombre == "" || $correo == "" || $asunto == "" || $mensaje == "") {
+                                    echo '<script type="text/javascript">document.getElementById("formMsg").innerHTML = "";</script>';
+                                } else {
+                                    if (!preg_match($email_exp, $correo)) {
+                                        echo '<script type="text/javascript">document.getElementById("formMsg").innerHTML = "Introduce un email válido, por favor.";</script>';
+                                    }else{
+                                        if (!preg_match($string_exp, $nombre)) {
+                                            echo '<script type="text/javascript">document.getElementById("formMsg").innerHTML = "El nombre que has introducido no es válido.";</script>';
+                                        } else{ 
+                                            if (strlen($mensaje) < 2) {
+                                                echo '<script type="text/javascript">document.getElementById("formMsg").innerHTML = "¿Podrías decirnos algo más en el mensaje?";</script>';
+                                            }else{
+                                    
+                                    $para = "contacto@popol.es";
+                                    $msjCorreo = "Nombre: $nombre\n E-Mail: $correo\n Asunto: $asunto\n Mensaje:\n $mensaje";
+                                    $cabecera = 'From: ' . $correo . "\r\n" .
+                                            'Reply-To: ' . $correo . "\r\n" .
+                                            'X-Mailer: PHP/' . phpversion();
+                                    $envio = mail($para, $asunto, $mensaje, $cabecera);
+                                    if ($envio) {
+                                        echo '<script type="text/javascript">document.getElementById("formMsg").innerHTML = "Hemos recibido tu mensaje.";</script>';
+                                    } else {
+                                        echo '<script type="text/javascript">document.getElementById("formMsg").innerHTML = ">No hemos podido recibir tu mensaje. Inténtalo de nuevo.";</script>';
+                                    }
+                                }}}}
+                                ?>
+
                             </div>	
                         </div>
                     </div>
-                    <div class="col-lg-5 col-sm-5 paypal nomov">
+                    <div class="col-lg-5 col-sm-5 paypal">
                         <h2>Un último favor</h2>
-                        <p class="descripcion">Gracias a tu suscripción ya hemos conseguido crecer. Ahora,
+                        <p class="descripcion">Gracias a tu visita ya hemos conseguido crecer. Ahora,
                             ayúdanos a seguir avanzando. Necesitamos costear el desarrollo del proyecto
                             y tu apoyo es muy importante. 
                             <br><br>Haz click en el siguiente botón e introduce la cantidad que desees. 
@@ -326,13 +375,14 @@
                             <input type="image" src="https://www.paypalobjects.com/es_ES/ES/i/btn/btn_donateCC_LG.gif" name="submit" alt="PayPal, la forma rápida y segura de pagar en Internet.">
                             <img alt="" border="0" src="https://www.paypalobjects.com/es_ES/i/scr/pixel.gif" width="1" height="1">
                         </form>
+
                     </div> 
                 </div>
             </section>
         </div>
 
 
-        <section class="main-section client-part" id="yuzz">
+        <section class="main-section client-part" id="yuzz"><!--main-section client-part-start-->
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12">
@@ -341,13 +391,13 @@
                 </div>
                 <b class="trophy wow fadeInDown delay-03"><i class="fa-5x fa-trophy"></i></b>
             </div>
-        </section>
-        <div class="c-logo-part">
+        </section><!--main-section client-part-end-->
+        <div class="c-logo-part"><!--c-logo-part-start-->
             <div class="container">
                 <ul>
-                    <li><a href="http://yuzz.org.es/"><img src="img/c-liogo1.png" alt="Yuzz"></a></li>
-                    <li><a href="http://www.santander.com/universidades/"><img src="img/c-liogo2.png" alt="Santander"></a></li>
-                    <li><a href="http://www.cise.es/"><img src="img/c-liogo3.png" alt="CISE"></a></li>
+                    <li><a href="http://yuzz.org.es/"><img src="img/c-liogo1.png" alt=""></a></li>
+                    <li><a href="http://www.santander.com/universidades/"><img src="img/c-liogo2.png" alt=""></a></li>
+                    <li><a href="http://www.cise.es/"><img src="img/c-liogo3.png" alt=""></a></li>
                 </ul>
             </div>
         </div><!--c-logo-part-end-->
@@ -355,7 +405,7 @@
 
         <footer class="footer">
             <div class="container">
-                <div class="footer-logo"><a href="index.html"><img src="img/logo.png" alt="Popol"></a></div>
+                <div class="footer-logo"><a href="#"><img src="img/logo.png" alt=""></a></div>
                 <span class="copyright"></span>
                 <div class="credits">
 
@@ -363,63 +413,19 @@
             </div>
         </footer>
 
-        <!--<a id="back-to-top" href="#" class="btn btn-lg back-to-top" role="button" data-toggle="tooltip" data-placement="left"><i class="fa-arrow-up"></i></a>-->
-        
-        <button id="go-to-suscribe" class="btn btn-lg go-to-suscribe" role="button" data-toggle="tooltip" data-placement="top" >SUSCRIBIRME</button>
-        
-        <a id="read-more" href="#quees" class="btn btn-lg read-more" role="button" data-toggle="tooltip" data-placement="left"><i class="fa-arrow-down"></i> ¿Te gustan los videojuegos? <i class="fa-arrow-down"></i></a>
-        
-        <!-- Lang -->
-        <div id="lang" class="btn-group lang">
-            <button type="button" class="btn btn-default">
-                <img id="imgBtnSel" src="http://popol.es/img/flag/es.png" alt="ES" class="img-thumbnail icon-medium">
-            </button>
-            <button type="button" style="padding:6.5px;" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
-                <span class="caret"></span>
-            </button>
-            <ul class="dropdown-menu" role="menu">
-                <li><a id="btnEs" href="http://popol.es/index.html" class="language"><img id="imgBtnEs" src="http://popol.es/img/flag/es.png" alt="ES" class="img-thumbnail icon-small"></a></li>
-                <li><a id="btnEng" href="http://popol.es/lang/eng/index.html" class="language"><img id="imgBtnEng" src="http://popol.es/img/flag/eng.png" alt="ENG" class="img-thumbnail icon-small"></a></li>
-            </ul>
-        </div>
 
-        <!-- Modal suscribe -->
-        <div class="modal modal-suscribe" id="suscribe">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <!--<button style=color:black" type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>-->
-                        <h2 class="modal-title">Suscribirme</h2>
-                    </div>
-                    <div class="modal-body">
-                        <h4>¿Te gusta el proyecto?</h4>
-                        Suscríbete y te informaremos de cualquier novedad.
-                        <form action="registro.php" method="post" role="form" class="contactForm animated fadeIn delay-02s">
-                            <input type="email" class="form-control newslettermail" name="email" id="email" placeholder="Correo" data-rule="email" data-msg="Introduce un email válido" />
-                            <input type="submit" class="suscripcion" name="submit" value="ENVIAR">
-                            <div class="validation"></div>
-                        </form>
-                    </div>
-                    <div class="modal-footer">
-                        <a href="#" data-dismiss="modal" class="btn">Cerrar</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        
-        <!-- main nav scroll -->
         <script type="text/javascript">
             $(document).ready(function (e) {
                 $('#test').scrollToFixed();
                 $('.res-nav_click').click(function () {
                     $('.main-nav').slideToggle();
                     return false
+
                 });
+
             });
         </script>
 
-        <!-- wow -->
         <script>
             wow = new WOW(
                     {
@@ -430,7 +436,7 @@
             wow.init();
         </script>
 
-        <!--Main-nav-->
+
         <script type="text/javascript">
             $(window).load(function () {
 
@@ -440,132 +446,63 @@
                     $('html, body').stop().animate({
                         scrollTop: $($anchor.attr('href')).offset().top - 102
                     }, 1500, 'easeInOutExpo');
+                    /*
+                     if you don't want to use the easing effects:
+                     $('html, body').stop().animate({
+                     scrollTop: $($anchor.attr('href')).offset().top
+                     }, 1000);
+                     */
                     event.preventDefault();
                 });
             })
         </script>
 
-
-        <!-- back to top -->
         <script type="text/javascript">
-            $(document).ready(function () {
-                $(window).scroll(function () {
-                    if ($(this).scrollTop() > 100 && $(window).width() > 790) {
-                        $('#back-to-top').fadeIn();
-                    } else {
-                        $('#back-to-top').fadeOut();
-                    }
-                });
-                // scroll body to 0px on click
-                $('#back-to-top').click(function () {
-                    $('#back-to-top').tooltip('hide');
-                    $('body,html').animate({
-                        scrollTop: 0
-                    }, 800);
-                    return false;
-                });
 
-                $('#back-to-top').tooltip('show');
+            $(window).load(function () {
 
-            });
-        </script>
 
-        <!--Go to suscribe-->
-        <script type="text/javascript">
-            $(document).ready(function () {
-                $(window).scroll(function () {
-                    if ($(this).scrollTop() > 100) {
-                        $('#go-to-suscribe').css({
-                            "background-color": "#204d74",
-                            "border-color": "#204d74"
-                        });
-                    } else {
-                        $('#go-to-suscribe').css({
-                            "background-color": "#cb2026",
-                            "border-color": "#cb2026"
-                        });
+                var $container = $('.portfolioContainer'),
+                        $body = $('body'),
+                        colW = 375,
+                        columns = null;
+
+
+                $container.isotope({
+                    // disable window resizing
+                    resizable: true,
+                    masonry: {
+                        columnWidth: colW
                     }
                 });
 
-                $('#go-to-suscribe').click(function () {
-                    $('#go-to-suscribe').tooltip('hide');
-                    $('#suscribe').modal({show: true});
-                    return false;
-                });
-
-                $('#go-to-suscribe').tooltip('show');
-
-            });
-        </script>
-
-        <!--Read More -->
-        <script type="text/javascript">
-            $(document).ready(function () {
-                $(window).scroll(function () {
-                    if ($(this).scrollTop() < 100) {
-                        $('#read-more').fadeIn();
-                    } else {
-                        $('#read-more').fadeOut();
+                $(window).smartresize(function () {
+                    // check if columns has changed
+                    var currentColumns = Math.floor(($body.width() - 30) / colW);
+                    if (currentColumns !== columns) {
+                        // set new column count
+                        columns = currentColumns;
+                        // apply width to container manually, then trigger relayout
+                        $container.width(columns * colW)
+                                .isotope('reLayout');
                     }
-                });
-                // scroll body to 0px on click
-                $('#read-more').click(function () {
-                    $('#read-more').tooltip('hide');
-                    var $anchor = $(this);
-                    $('html, body').animate({
-                        scrollTop: $($anchor.attr('href')).offset().top - 102
-                    }, 1500, 'easeInOutExpo');
+
+                }).smartresize(); // trigger resize to set container width
+                $('.portfolioFilter a').click(function () {
+                    $('.portfolioFilter .current').removeClass('current');
+                    $(this).addClass('current');
+
+                    var selector = $(this).attr('data-filter');
+                    $container.isotope({
+
+                        filter: selector,
+                    });
                     return false;
                 });
 
-                if($(window).width() < 800){
-                    document.getElementById('read-more').innerHTML="<i class='fa-arrow-down'></i> Leer más <i class='fa-arrow-down'</i>";
-                }else{
-                    document.getElementById('read-more').innerHTML="<i class='fa-arrow-down'></i> ¿Te gustan los videojuegos? <i class='fa-arrow-down'</i>";
-                }
-                
-                $('#read-more').tooltip('show');
-
             });
-        </script>
-
-        <!--Google Analytics-->
-        <script type="text/javascript">
-            (function (i, s, o, g, r, a, m) {
-                i['GoogleAnalyticsObject'] = r;
-                i[r] = i[r] || function () {
-                    (i[r].q = i[r].q || []).push(arguments)
-                }, i[r].l = 1 * new Date();
-                a = s.createElement(o),
-                        m = s.getElementsByTagName(o)[0];
-                a.async = 1;
-                a.src = g;
-                m.parentNode.insertBefore(a, m)
-            })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
-
-            ga('create', 'UA-97889697-1', 'auto');
-            ga('send', 'pageview');
 
         </script>
-
-        <!--SEO LD+JSON-->
-        <script type="application/ld+json">
-            {
-            "@context": "http://schema.org",
-            "@type": "Organization",
-            "name": "Popol",
-            "alternateName": "Popol: Create. Share. Play.",
-            "url": "http://popol.es",
-            "logo": "http://www.popol.es/logo.jpg",
-            "sameAs": [
-            "http://www.facebook.com/WebPopol",
-            "http://twitter.com/popol_es"
-            ]
-            }
-        </script>
-
-        <!--Lang-->
-        <script type="text/javascript" src="http://popol.es/js/plugins/lang.js"></script>
 
     </body>
 </html>
