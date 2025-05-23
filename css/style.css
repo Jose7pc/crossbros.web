@@ -188,7 +188,7 @@ p{
     list-style:none;
 }
 .main-nav li{
-    display:inline;
+    display:inline-block;
     margin:0 1px;
 }
 .main-nav li a{
@@ -317,6 +317,7 @@ p{
 
 .hlogo {
     text-align: left;
+    padding: 50px 100px 0px 0px;
     padding-left: 100px;
     padding-top: 50px;
 }
@@ -406,6 +407,10 @@ p{
 @keyframes scroll-vertical {
   0% { transform: translateY(0); }
   100% { transform: translateY(-50%); }
+}
+@keyframes scroll-horizontal {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-455%); }
 }
 
 .logo{
@@ -522,7 +527,7 @@ p{
 }
 
 .description{
-    text-align: justify;
+    text-align: left;
     color:#ffffff;
     margin: 0 0 50px 0;
     padding: 0 10px 20px 10px;
@@ -570,37 +575,6 @@ p{
     color: black;
 }
 
-
-/* Services
----------------------------------*/
-
-.service-list{
-    padding:0 0 0 0;
-    font-size:14px;
-    margin-bottom:40px;
-}     
-.service-list-col1{
-    float:left;
-    width:60px;
-}
-.service-list-col1 i{
-    font-style:normal;
-    font-size:38px;
-    display:block;
-    color:var(--red);
-    font-family: 'FontAwesome';
-    line-height:38px;
-}
-.service-list-col2{
-    overflow:hidden;	
-}
-.main-section.alabaster{
-    background:#ffffff;
-    border-top-color: var(--yellow);
-    border-top-style: solid;
-    border-top-width: 2px;
-    padding:90px 0px;
-}
 
 /* Games
 ---------------------------------*/
@@ -1466,7 +1440,7 @@ img {
 }
 
 .main-nav > li {
-    width: 145px;
+    width: 160px;
 }
 
 .flex{
