@@ -59,6 +59,9 @@
     h6{ font-size:16px; margin-bottom:40px;}
     p{ line-height:18px;}
 
+    .pc {display: none;}
+    .mobile {display: block;}
+
     .main-nav{ display:none; }
     .main-nav-outer{display: block;}
     .main-nav li{ display:list-item; text-align: left; width: initial;}
@@ -88,14 +91,15 @@
     .games-section .title {height: 110px;}
     .hod-row {margin: 0px;}
     .hod {height: 560px;}
-    .hod .promo {max-width: 140%; right: -20%;}
+    .hod .promo {max-width: 100%; right: 0%;}
     .hod .logo {margin: 10px 0px; left: 0}
-    .hod .steam {width: 50%; bottom: 2%; left: 25%;}
+    .hod .steam {width: 50%; bottom: 35%; left: 25%;}
 
+    .community-section .row {margin: 0px;}
     .social-icons a { margin:10px; }
     .social-icons img { height: 100px; padding: 10px;}
 
-    .contact-main {padding: 0px 0px;}
+    .contact-main {padding: 0px 40px;}
     .contact-main .mail {filter: grayscale(0%); margin:0px;}
     .contact-main .mail:hover {background-color: #000;}
     .contact-main .description {margin: 20px 0px 0px;}
@@ -104,14 +108,18 @@
 
     .description {text-align: center;}
 
-    .carousel-track {animation: scroll-horizontal 12s linear infinite;}
+    .carousel-mask {height: 200px;}
+    .carousel-mask br {display: none;}
+    .carousel-track {flex-direction: row; animation: scroll-horizontal 10s linear infinite;}
 
     .carousel-thanks-mask {height: 200px;}
     .carousel-thanks-mask br {display: none;}
-    .carousel-thanks-track {flex-direction: row; animation: scroll-horizontal 6s linear infinite;}
+    .carousel-thanks-track {flex-direction: row; animation: scroll-horizontal 10s linear infinite;}
     
     .slime {display: none;}
     .goat {display: none; animation: none;}
+
+    .footer-logo img {max-height: 100px;}
 }
 
 @media only screen and (max-width: 479px) {

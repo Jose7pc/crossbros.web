@@ -169,6 +169,13 @@ p{
     color: var(--green);
 }
 
+.pc {
+    display: block;
+}
+
+.mobile {
+    display: none;
+}
 
 
 /* Navigation
@@ -654,6 +661,10 @@ p{
 
 .community-section {
     color: var(--green);
+}
+
+.community-section .row {
+    margin-right: 40px;
 }
 
 .community {
@@ -1342,6 +1353,7 @@ img {
     animation: borderRainbow 6s linear infinite;
 }
 .footer-logo{
+    text-align: center;
     margin:15px auto 35px;
     width: 200px;
 }
