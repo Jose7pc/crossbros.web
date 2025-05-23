@@ -183,12 +183,34 @@ p{
   height: inherit;     /* altura visible */
   overflow: hidden;  /* máscara */
   position: relative;
+  padding: 40px 0
+}
+
+.carousel-mask::before,
+.carousel-mask::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 50px; /* altura de la sombra */
+  z-index: 2;
+  pointer-events: none;
+}
+
+.carousel-mask::before {
+  top: 0;
+  background: linear-gradient(to bottom, var(--red) 80%, transparent 100%);
+}
+
+.carousel-mask::after {
+  bottom: 0;
+  background: linear-gradient(to top, var(--red) 0%, transparent 100%);
 }
 
 .carousel-track {
   display: flex;
   flex-direction: column;
-  animation: scroll-vertical 6s linear infinite;
+  animation: scroll-vertical 12s linear infinite;
 }
 
 .carousel-track img {
