@@ -35,7 +35,6 @@
     h3{ font-size:15px;}
 
     .service-list{ margin-bottom:20px; font-size:15px;}
-    .featured-work p.padding-b{ padding-bottom:15px;}
     .main-section{ padding:40px 40px;}
     .c-logo-part ul li{ margin:0 0; float:left; width:18%;}
     .c-logo-part ul li a{ display:block;}
@@ -77,7 +76,6 @@
     .team-leader:hover .team-leader-shadow{box-shadow:0px 0px 0px 7px rgba(32,77,116,0.20);}
     .team-leader:hover ul{ display:block; opacity:0;}
     .res-nav_click{ display:none;}
-    .featured-work{ font-size:12px; margin-top:30px; padding-left: 20px;}
     .featured-box{ font-size:12px;}
     .featured-box p{ line-height:18px; }
     .c-logo-part ul a{ margin:0 0 5px;}
