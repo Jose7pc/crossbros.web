@@ -93,7 +93,8 @@
     .hod {height: 560px;}
     .hod .promo {max-width: 100%; right: 0%;}
     .hod .logo {margin: 10px 0px; left: 0}
-    .hod .steam {width: 50%; bottom: 35%; left: 25%;}
+    .hod .steam {width: 35%; bottom: 50%; left: 10%;}
+    .hod .trailer {width: 35%; bottom: 50%; left: 55%;}
 
     .community-section .row {margin: 0px;}
     .social-icons a { margin:10px; }
