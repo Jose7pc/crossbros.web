@@ -620,7 +620,7 @@ p{
 }
 
 .hod {
-    background-image: url(../img/anirea/bg.jpg);
+    background-image: url(../img/anirea/background.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: bottom;
@@ -631,7 +631,7 @@ p{
 
 .hod .logo {
     position: absolute;
-    margin: -10px 10px;
+    margin: 20px 60px;
     width: 700px;
 }
 
@@ -647,13 +647,27 @@ p{
     left:60px;
     bottom: 20px;
 
-    width: 170px;
-    padding: 15px;
+    width: 180px;
+    padding: 10px;
 
     border: 2px solid black;
     border-radius: 15%;
 
     background-color: black;
+}
+
+.hod .trailer {
+    position:absolute;
+    left:260px;
+    bottom: 20px;
+
+    width: 180px;
+    padding: 10px;
+
+    border: 2px solid red;
+    border-radius: 15%;
+
+    background-color: red;
 }
 
 /* Community
