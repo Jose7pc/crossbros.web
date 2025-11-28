@@ -82,7 +82,7 @@
 
     .about-section .companion {margin-right: 0px; height: auto;}
     .about-section .main-panel {padding: 20px 5%; height: auto;}
-    .team-gallery {display: block;}
+    .team-gallery {display: block; margin: 30px 0px;}
     .team-member {width: 80%; margin-bottom: 20px;}
     .team-photo {filter: grayscale(0%);}
 

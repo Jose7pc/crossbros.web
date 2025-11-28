@@ -542,12 +542,11 @@ p{
 
 .team-gallery {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 60px 60px;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px 150px;
   justify-items: center;
   align-items: center;
-
-  margin-top: 60px;
+  margin: 25px 100px 0px;
 }
 
 .team-photo {
@@ -560,7 +559,7 @@ p{
   transition: filter 0.4s, box-shadow 0.3s;
   box-shadow: 0 2px 12px rgba(0,0,0,0.15);
   background: #fff;
-  border: 8px solid black;
+  border: 6px solid black;
   
   box-shadow: 0px 0px 30px black;
 }
